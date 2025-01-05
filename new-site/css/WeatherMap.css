@@ -1,0 +1,99 @@
+.weather-map-container {
+    width: 100%;
+    max-width: 900px;
+    /* Increased the max width for the map */
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #efefef;
+    /* White background for clarity */
+}
+
+.weather-map-container h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.weather-map-container p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.weather-map-container .layer-control,
+.weather-map-container .zoom-control {
+    margin-bottom: 20px;
+}
+
+.weather-map-container label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.weather-map-container select,
+.weather-map-container input[type="range"] {
+    padding: 5px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+.weather-map-container .zoom-control {
+    text-align: center;
+    /* Center the label and slider */
+}
+
+.weather-map-container .zoom-control input[type="range"] {
+    width: 80%;
+    /* Adjust slider width */
+    margin: 10px auto;
+    /* Center the slider */
+}
+
+.weather-map-container .tile {
+    display: block;
+    margin: 10px auto;
+    background-color: #ffffff;
+    /* Light grey background if the tile does not load */
+    border-radius: 8px;
+    width: 600px;
+    /* Increased map width */
+    height: 400px;
+    /* Set a fixed height for the map */
+    background-size: cover;
+    background-position: center;
+    /* Center the map image */
+}
+
+@media (max-width: 600px) {
+    .weather-map-container select {
+        width: 100%;
+    }
+
+    .weather-map-container .zoom-control input[type="range"] {
+        width: 100%;
+        /* Make the slider fit the width on smaller screens */
+    }
+
+    .weather-map-container .tile {
+        width: 100%;
+        /* Make the map responsive */
+        height: auto;
+        /* Let the height adjust based on the width */
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 601px) {
+    .weather-map-container .zoom-control select {
+        width: auto;
+    }
+
+    .weather-map-container .zoom-control input[type="range"] {
+        width: 80%;
+        /* Keep the slider centered */
+    }
+}

@@ -1,0 +1,139 @@
+.forecast-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.forecast-header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #333;
+}
+
+.forecast-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.forecast-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.forecast-summary div {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    color: #444;
+}
+
+.details-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+}
+
+.forecast-details {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.forecast-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.forecast-buttons button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.forecast-buttons button:hover {
+    background-color: #0d6efd;
+}
+
+.forecast-item {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.temperature-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.temperature-time h1 {
+    font-size: 2rem;
+    /* Adjust the font size for the temperature */
+    margin: 0;
+}
+
+.temperature-time p {
+    font-size: 1.5rem;
+    /* Increase font size for the time */
+    margin: 0;
+    font-weight: bold;
+    color: #555;
+    /* Optional: Add a color for better visibility */
+}
+
+.day-buttons {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 10px; /* Adds space between the buttons */
+    margin: 15px 0; /* Adds space above and below the buttons */
+  }
+  
+  .day-button {
+    padding: 10px 20px; /* Adjust button padding for size */
+    font-size: 1rem; /* Set the font size for the buttons */
+    border: none; /* Remove default borders */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #007bff; /* Set a blue background color */
+    color: white; /* Set the text color to white */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .day-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .day-button.active {
+    background-color: #28a745; /* Green background for the active button */
+  }
+  

@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&family=Open+Sans:wght@300;600&display=swap');
+
+/* Body Styling */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: linear-gradient(120deg, #e8f5e9, #bbdefb);
+    color: #333;
+    line-height: 1.8;
+    padding: 20px;
+    font-size: 1.2rem;
+    /* Increased base font size */
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    /* Increased bottom margin for better spacing */
+}
+
+#app-title {
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    /* Default font size */
+    color: #0078d7;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Container */
+#main-page {
+    margin: auto;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    /* Slightly increased padding */
+    font-size: 1.2rem;
+    /* Increased font size */
+}
+
+/* Form Section */
+#location-form {
+    margin: 30px 0;
+    /* Increased spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#location-form-part {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.form-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    /* Increased font size */
+    color: #0056b3;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#location {
+    width: 300px;
+    padding: 12px;
+    /* Slightly increased padding */
+    font-size: 1.2rem;
+    /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button#handler {
+    padding: 12px 25px;
+    /* Increased padding */
+    background-color: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    /* Increased font size */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button#handler:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Error Message */
+#error-message {
+    text-align: center;
+    font-size: 1.5rem;
+    /* Increased font size */
+    color: #d32f2f;
+    margin-top: 15px;
+    display: none;
+    font-weight: bold;
+}
+
+
+/* Results container */
+#results-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#results-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#results-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#results-container li {
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+#results-container li:hover {
+    cursor: pointer;
+    background-color: #5eacff;
+    /* Blue color */
+    color: white;
+    /* Change text color to white on hover */
+}
+
+#results-container li:hover em {
+    color: #ffffff;
+    /* Yellow color for latitude/longitude on hover */
+}
+
+/* Styling for lat/lon details */
+#results-container em {
+    font-style: italic;
+    color: #777;
+}
+
+
+#location-details {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+#location-details h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#location-details p {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.pane-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pane-options button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease;
+}
+
+.pane-options button:hover {
+    background-color: #0056b3;
+}
+
+.last-button {
+    display: block;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 20px auto 0;
+    transition: background-color 0.3s ease;
+}
+
+.last-button:hover {
+    background-color: #373737;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Weather Report Section */
+#weather-report {
+    background: #e3f2fd;
+    border: 1px solid #90caf9;
+    border-radius: 10px;
+    padding: 30px;
+    /* Increased padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    /* Increased spacing */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    /* Increased font size */
+}
+
+.weather-city {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    /* Increased font size */
+    color: #1e88e5;
+    margin-bottom: 20px;
+}
+
+.weather-temp {
+    text-align: center;
+    font-size: 2.5rem;
+    /* Increased font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.weather-main {
+    text-align: center;
+    font-size: 1.6rem;
+    /* Increased font size */
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+    /* Increased spacing */
+}
+
+.weather-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    /* Increased font size */
+    color: #444;
+}
+
+.weather-icon img {
+    width: 100px;
+    /* Increased icon size */
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Weather Stats - Single Row */
+.weather-stats {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute items evenly */
+    align-items: center;
+    /* Center align vertically */
+    gap: 10px;
+    /* Reduce spacing between items */
+    margin-bottom: 25px;
+    text-align: center;
+    overflow-x: hidden;
+    /* No horizontal scroll */
+    white-space: nowrap;
+    /* Prevent wrapping */
+}
+
+.stat-item {
+    flex: 0 1 auto;
+    /* Allow resizing if needed */
+    padding: 8px;
+    /* Reduce padding */
+    background: #f0f4c3;
+    border: 1px solid #cddc39;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    /* Decrease font size */
+    font-family: 'Roboto', sans-serif;
+    min-width: 100px;
+    /* Adjust minimum width */
+    text-align: center;
+}
+
+/* Weather Extra Details */
+.weather-extra {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    /* Increased font size */
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.weather-extra li {
+    margin-bottom: 10px;
+    padding: 10px;
+    /* Increased padding */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Pollution Report Section */
+.report-container {
+    display: flex;
+    gap: 25px;
+    /* Increased spacing */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#pollution-report {
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+#pollution-report h2 {
+    text-align: center;
+    font-size: 2rem;
+    /* Increased font size */
+    color: #0078d7;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 25px;
+}
+
+.pollution-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    /* Increased font size */
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pollution-list li {
+    margin-bottom: 12px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 8px;
+}
+
+/* Maps Section */
+#maps {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    /* Increased spacing */
+    justify-content: center;
+}
+
+.map img {
+    width: 100%;
+    max-width: 450px;
+    /* Increased image size */
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    #app-title {
+        font-size: 3rem;
+        /* Smaller font size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    #app-title {
+        font-size: 2.5rem;
+        /* Smaller font size for medium screens */
+    }
+
+    #location-form-part {
+        flex-direction: column;
+    }
+
+    #location {
+        width: 100%;
+    }
+
+    .report-container {
+        flex-direction: column;
+    }
+
+    #pollution-report,
+    #maps {
+        flex: unset;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #app-title {
+        font-size: 2rem;
+        /* Smaller font size for small screens (phones) */
+    }
+
+    .weather-city {
+        font-size: 2rem;
+        /* Decrease weather city font size */
+    }
+
+    .weather-temp {
+        font-size: 2rem;
+        /* Decrease temperature font size */
+    }
+
+    .weather-main {
+        font-size: 1.4rem;
+        /* Decrease weather main font size */
+    }
+
+    .weather-description {
+        font-size: 1.3rem;
+        /* Decrease description font size */
+    }
+
+    .stat-item {
+        font-size: 0.8rem;
+        /* Decrease font size */
+    }
+}

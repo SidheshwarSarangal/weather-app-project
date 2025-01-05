@@ -1,0 +1,90 @@
+.air-pollution-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor:default;
+}
+
+.air-pollution-container h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.air-pollution-container p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.air-pollution-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.air-pollution-container table th,
+.air-pollution-container table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.air-pollution-container table th {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+}
+
+.air-pollution-container table td {
+    background-color: #fff;
+    color: #666;
+}
+
+.air-pollution-container table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+.air-pollution-container table tr:hover td {
+    background-color: #f0f0f0;
+}
+
+.air-pollution-container .aqi-description {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+
+.air-pollution-container .aqi-description span {
+    font-weight: 700;
+    color: #007BFF;
+}
+
+@media (max-width: 600px) {
+    .air-pollution-container {
+        padding: 15px;
+    }
+
+    .air-pollution-container h3 {
+        font-size: 1.8rem;
+    }
+
+    .air-pollution-container p,
+    .air-pollution-container .aqi-description {
+        font-size: 1rem;
+    }
+
+    .air-pollution-container table th,
+    .air-pollution-container table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
